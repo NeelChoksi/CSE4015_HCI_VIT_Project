@@ -73,3 +73,75 @@ body{
   justify-content: space-evenly;
   padding: 4rem;
 }
+
+
+nav{
+  display:flex;
+  justify-content: space-around;
+  color: rgba(231,231,231,0.8);
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav .logo{
+  text-decoration: none;
+  font-size:2rem;
+  color:white;
+  padding:.4rem;
+}
+nav a{
+  color:blanchedalmond;
+  text-decoration: none;
+  padding:.4rem;
+  border-radius: .2rem;
+  transition:300ms ease-in-out;
+}
+nav a:hover{
+  background-color: rgba(231,231,231,0.3);
+  border:1px solid white;
+}
+button{
+  text-decoration: none;
+  border:none;
+  padding:.4rem;
+  border-radius: .4rem;
+  margin:.4rem;
+  background-color: rgba(231,231,231,0.3);
+  border:1px solid white;
+  color:white;
+  background-color: black;
+  cursor:pointer;
+  transition:300ms ease-in-out;
+
+}
+button:hover{
+  color:white;
+  background-color: rgba(231,231,231,0.3);
+
+}
+.ul-container ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.style-form{
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-gap: 20px;
+  margin:0 auto;
+  max-width: 400px;
+}
+
+input,select{
+  border: none;
+  border-bottom: 2px solid black;
+  background: rgba(231,231,231,0.7);
+  padding: .4rem;
+  border-radius: .4rem;
+
+}
