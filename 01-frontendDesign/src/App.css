@@ -1,0 +1,221 @@
+body{
+  background: #c1d1e3;
+}
+.ActionsGrid,
+.DataAnalytics,
+.CovidData,
+.SiteVisit{
+  margin: 2rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-data-grid,
+.map-grid,
+.numerical-grid,
+.chart-grid,
+.prediction-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+
+}
+
+.actions-grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;  
+}
+
+@media screen and (max-width:1110px){
+  .actions-grid-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+.map-grid,
+.numerical-grid,
+.chart-grid,
+.prediction-grid{
+    grid-template-columns: repeat(1,1fr);
+}
+}
+
+@media screen and (max-width:768px){
+  .actions-grid-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+.actions-grid-item,
+.map-grid-item,
+.numerical-grid-item,
+.chart-grid-item,
+.prediction-grid-item,
+.c-data-grid-item{
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 8px 5px 5px ;
+  background: #FFFFFC;
+}
+
+.actions-grid-item p{
+  font-size: 1.4rem;
+}
+
+.navbar{
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar h1{
+  color: white;
+  margin-left: 1.3rem;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  margin-right:1.3rem;
+}
+.menu li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  padding: .5rem;
+  font-weight: 700;
+}
+
+.menu li a:hover{
+  background: red;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: .4rem;
+
+}
+/*
+.Login{
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.RegisterContainer{
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.container{
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 2rem 2.3rem;
+  border-radius: .5rem;
+}
+.container .title{
+  text-align: center;
+}
+
+.container form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details .input-box{
+  width: calc(100% / 2 - 20px);
+  justify-content: space-between;
+  margin-bottom: .3rem;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  margin:0rem .2rem .7rem 0;
+}
+
+.user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width:584px){
+  .container{
+    max-width: 90%;
+
+  }
+  form .user-details .input-box{
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
+
+
+/*utilities*/
+
+
+input,
+select{
+  height: 2.4rem;
+  width: 100%;
+  outline: none;
+  border-radius: .4rem;
+  border: 1px solid #ccc;
+  padding-left: .95rem;
+  font-size: 1rem;
+}
+
+
+.btn{
+  width: 100%;
+  background: #1D1A05;
+  padding: .4rem;
+  border-radius: .4rem;
+  color: #fffffc;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.btn:hover{
+  font-weight: 900;
+  background: #000;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.btn-alt{
+  width: 100%;
+  background: #fffffc;
+  padding: .4rem;
+  border-radius: .4rem;
+  color: #1D1A05;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.btn-alt:hover{
+  font-weight: 900;
+  background: #000;
+  font-size: 1.4rem;
+  color: #fff;
+}
